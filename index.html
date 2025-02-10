@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu imóvel</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Venda seu imóvel</h1>
+        </div>
+
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h3>Venda fácil seu imóvel!</h3>
+                <p>Descreva os detalhes e opcionais do seu imóvel.</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio</label><span class="required-field">*</span>
+                        <input type="text" name="title" id="title" placeholder="Um titulo para seu anúncio"
+                            class="block" minlength="1" maxlength="30" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="price">Digite o preço do seu imóvel</label><span class="required-field">*</span>
+                        <input type="number" name="price" id="price" placeholder="Um titulo para seu anúncio"
+                            class="block" minlength="1" maxlength="30" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="desc">Descrição</label><span class="required-field">*</span>
+                        <textarea name="desc" id="desc" class="block"
+                            placeholder="Descreva os detalhes do seu imóvel"></textarea>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="city">Cidade</label><span class="required-field">*</span>
+                        <input type="text" name="city" id="city" placeholder="Digite a cidade do imóvel" class="block"
+                            minlength="1" maxlength="30" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="bairro">Bairro</label><span class="required-field">*</span>
+                        <input type="text" name="bairro" id="bairro" placeholder="Qual bairro do imóvel" class="block"
+                            minlength="1" maxlength="30" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="date">Data de compra do imóvel</label><span class="required-field">*</span>
+                        <input type="date" name="date" id="date" class="block" required>
+                    </div>
+
+
+                    <div class="box-input">
+                        <p>Quantos quartos possui?<span class="required-field">*</span></p>
+                        <input type="radio" name="bedroom" id="bedroom">
+                        <label for="bedroom">1 quarto</label>
+                        <input type="radio" name="bedroom" id="bedroom">
+                        <label for="bedroom">2 quartos</label>
+                        <input type="radio" name="bedroom" id="bedroom">
+                        <label for="bedroom">3 quartos</label>
+                        <input type="radio" name="bedroom" id="bedroom">
+                        <label for="bedroom">4 quartos ou mais</label>
+
+                    </div>
+
+                    <div class="optional-box">
+                        <p>Opcionais do seu imóvel<span class="required-field">*</span></p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="garage" name="opticional[]" value="garage">
+                                <label for="garage">Garagem</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="room" name="opticional[]" value="room">
+                                <label for="room">Sala de Estar</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="kitchen" name="opticional[]" value="kitchen">
+                                <label for="kitchen">Cozinha</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="pool" name="opticional[]" value="pool">
+                                <label for="pool">Piscina</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="garden" name="opticional[]" value="garden">
+                                <label for="garden">Jardim</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="room_party" name="opticional[]" value="garden">
+                                <label for="room_party">Salão de festa</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do imóvel<span class="required-field">*</span></p>
+                        <input type="file" name="file" id="file" class="block" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
